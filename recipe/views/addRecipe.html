@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="/recipe/add" method="POST">
+    <input type="text" name="name" placeholder="Name" required /><br />
+    <input name="description" placeholder="Description" required /><br />
+    <input type="text" name="preparationTime" placeholder="Preparation Time" required /><br />
+    <input type="text" name="cookingTime" placeholder="Cooking Time" required /><br />
+    <input type="text" name="imageUrl" placeholder="Image URL" required /><br />
+    <input type="text" name="country" placeholder="Country" required /><br />
+    <input type="text" name="veg" placeholder="Veg" required /><br />
+    
+    <button type="submit">Add Recipe</button>
+</form>
+</body>
+<script>
+  // document.querySelector('#form').addEventListener('submit', (e)=>{
+  //   e.preventDefault();
+  // })
+
+  // let info = (async () => {
+  //       let getdata = `http://localhost:8090/recipe/add`
+  //       let data = {
+  //           method: "POST"
+  //       }
+  //       let req = await fetch(getdata, data)
+  //       let response = await req.json()
+  //       console.log(response);
+  //   })
+</script>
+</html>
